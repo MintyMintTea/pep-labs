@@ -1,3 +1,4 @@
+import java.rmi.server.ObjID;
 
 public class InstantiationExample {
     /**
@@ -18,6 +19,7 @@ public class InstantiationExample {
      * @return any object.
      */
     public Object instantiateANewObject(){
-        return null;
+        Object obj1 = new Object();
+        return obj1;
     }
 }
