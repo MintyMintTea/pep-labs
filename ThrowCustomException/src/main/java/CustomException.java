@@ -5,4 +5,8 @@
  * Potentially, this class could also override some the behavior of Exception.
  */
 public class CustomException extends Exception{
+
+    static CustomException cust;
+
+    cust = new CustomException();
 }
