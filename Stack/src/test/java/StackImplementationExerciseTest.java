@@ -3,7 +3,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.Deque;
-import java.util.Stack;
 
 public class StackImplementationExerciseTest {
     static StackExercise se;
