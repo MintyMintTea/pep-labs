@@ -50,7 +50,7 @@ public class StackExercise {
      */
     public String removeFromTopOfStack(Deque<String> stack){
         
-        return stack.remove();
+        return stack.removeLast();
     }
     /**
      * Return the value at the top of a deque without removing the value.
@@ -58,6 +58,6 @@ public class StackExercise {
      * @return the value peeked from the top of the deque.
      */
     public String getTopOfStackWithoutRemoving(Deque<String> stack){
-        return stack.peek();
+        return stack.peekLast();
     }
 }
