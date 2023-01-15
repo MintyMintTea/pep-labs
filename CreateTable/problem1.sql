@@ -1,0 +1,1 @@
+CREATE TABLE song (title char(100),artist char(100))
