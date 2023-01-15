@@ -1,0 +1,1 @@
+INSERT INTO song (title, artist) VALUES ('We own the night','Dance Gavin, Dance')
