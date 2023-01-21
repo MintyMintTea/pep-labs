@@ -1,0 +1,1 @@
+DELETE FROM Site_User WHERE firstname = 'Steve';
