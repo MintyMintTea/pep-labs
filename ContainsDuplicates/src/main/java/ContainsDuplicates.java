@@ -8,6 +8,11 @@ public class ContainsDuplicates {
      * @return true if nums contains any duplicate values, false if it does not.
      */
     public boolean containsDuplicate(int[] nums){
+        final int MAXNUM = 99999;
+        boolean[]bitmap = new boolean[MAXNUM+1];
+        for(int i : nums){
+            if(!(bitmap[i]^= true))return true;
+        }
         return false;
     }
 }
