@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class DoesNotContain {
     /**
@@ -13,11 +14,12 @@ public class DoesNotContain {
      * @return true if arr does not contain target. false otherwise.
      */
     public boolean arrayDoesNotContain(int[] arr, int target){
-        for(int i : arr){
-            if(i != target){
-                return true;
-            }
-        }
-        return false;
+        // for(int i : arr){
+        //     if(i != target){
+        //         return true;
+        //     }
+        // }
+        boolean va = Arrays.asList(arr).contains(target);
+        return !va;
     }
 }
