@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class CombineArrays {
     /**
@@ -9,6 +11,10 @@ public class CombineArrays {
      */
     public int[] combine(int[] arr1, int[] arr2){
 
-        return null;
+        int[] combined = new int[arr1.length+arr2.length];
+        System.arraycopy(arr1, 0, combined, 0, arr1.length);
+        System.arraycopy(arr2, 0, combined, arr1.length, arr2.length);
+
+        return combined;
     }
 }
