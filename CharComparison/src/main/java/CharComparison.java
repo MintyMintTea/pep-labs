@@ -16,7 +16,9 @@ public class CharComparison {
         if(a[i]<b[i]){
             return -1;
         }
-        //else if (a[])
+        else if (a[i]>b[i]){
+            return 1;
+        }
     }
         return 0;
     }
