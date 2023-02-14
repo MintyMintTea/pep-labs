@@ -56,14 +56,19 @@ public class SampleClass {
     public boolean b;
 
     //    implement a custom .equals(SampleClass other){} method here.
-//    public boolean equals(SampleClass other){
-        
-//    }
+    public boolean equals(SampleClass other){
+        if(other == this){
+            return true;
+        }
+        if(!(other instanceof SampleClass)){
+            return false;
+        }
+        return Integer.compare(a,other.a) == 0 && Boolean.compare(b, other.b) == 0;
+    }
 
-//     //    implement a custom .toString(){} method here.
-//    public String toString(){
-//         this.a = a;
-//         this.b = b
-//    }
+    //    implement a custom .toString(){} method here.
+   public String toString(){
+        return this.a + " + " + this.b + "i";
+   }
     
 }
