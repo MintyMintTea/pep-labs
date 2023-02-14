@@ -21,6 +21,12 @@ public class JavalinSingleton {
         app.post("/problem1", ctx -> {
                 //implement logic here
                 String jsonString = ctx.body();
+                ObjectMapper mapper = new ObjectMapper();
+                Song song = mapper.readValue(jsonString, Song.class);
+                //System.out.println(song.getArtistName());
+
+                ctx.result(song.getArtistName());
+
 
         });
 
@@ -33,6 +39,12 @@ public class JavalinSingleton {
          */
         app.post("/problem2", ctx -> {
                //implement logic here
+               String jsonString = ctx.body();
+               ObjectMapper mapper = new ObjectMapper();
+               Song song = mapper.readValue(jsonString, Song.class);
+
+               song.setArtistName("Beatles");
+               ctx.result(mapper.writeValueAsString(song));
         });
 
 
